@@ -2,7 +2,7 @@
 
 void sortiesDirectes() {
   u32 time1, time2, time3;
-  time1 = micros();
+  time1 = micros(); 
 
   // 50 transitions pour augmenter la précision de la mesure temporelle
   bitClear(PORTB, PORTB0);
