@@ -60,6 +60,7 @@ void sortiesDirectes() {
   bitClear(PORTB, PORTB0);
   bitSet(PORTB, PORTB0);
 
+  // Mesure du temps pris par la lecture de micros()
   time2 = micros();
   time3 = micros();
 
