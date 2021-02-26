@@ -144,12 +144,11 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Impulsion à 0 pour déclencher l'oscilloscope
   digitalWrite(8, 0);
   delayMicroseconds(100);
-  //digitalWrite(8, 1);
-  //delayMicroseconds(100);
 
+  // Salve à la Arduino
   digitalWrite(8, 0);
   digitalWrite(8, 1);
   digitalWrite(8, 0);
@@ -161,6 +160,7 @@ void loop() {
   digitalWrite(8, 0);
   digitalWrite(8, 1);
 
+  // Salve par un accès direct aux registres
   bitClear(PORTB, PORTB0);
   bitSet(PORTB, PORTB0);
   bitClear(PORTB, PORTB0);
