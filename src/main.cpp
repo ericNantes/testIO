@@ -140,13 +140,14 @@ void setup() {
   pinMode(8, OUTPUT);
   sortiesDirectes();
   sortiesViaDigitalWrite();
+  delay(500);
   noInterrupts();
 }
 
 void loop() {
   // Impulsion à 0 pour déclencher l'oscilloscope
   digitalWrite(8, 0);
-  delayMicroseconds(100);
+  delayMicroseconds(20);
 
   // Salve à la Arduino
   digitalWrite(8, 0);
